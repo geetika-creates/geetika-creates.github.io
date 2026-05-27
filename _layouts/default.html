@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }} — {{ site.tagline }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ site.title }} — {{ site.tagline }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="profile">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  {% seo %}
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#top">
+        <span class="brand-mark">GT</span>
+        <span class="brand-name">Geetika Tripathi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Geetika Tripathi</p>
+        <p class="footer-role">Product Manager · SAP Labs Bulgaria</p>
+      </div>
+      <div class="footer-links">
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="{{ site.social.twitter }}" target="_blank" rel="noopener">X / Twitter</a>
+        <a href="{{ site.social.medium_tech }}" target="_blank" rel="noopener">Medium</a>
+        <a href="{{ site.social.email }}">Email</a>
+      </div>
+      <div class="footer-meta">
+        <p>© {{ 'now' | date: "%Y" }} Geetika Tripathi. Built with Jekyll &amp; GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+title: Geetika Tripathi
+tagline: Product Manager · Program Manager · Technology Evangelist
+description: >-
+  Product Manager at SAP Labs Bulgaria with 20 years of industry experience
+  spanning product management, program leadership, and engineering across
+  SAP S/4HANA, Cloud Integration, and Compliance.
+author: Geetika Tripathi
+email: geetika.tripathi@sap.com
+location: SAP Labs Bulgaria
+
+# URLs - update baseurl to match your repo name if not username.github.io
+url: ""
+baseurl: ""
+
+# Social
+social:
+  linkedin: https://www.linkedin.com/in/geetika-tripathi-33403b54/
+  twitter: https://twitter.com/shuklageetika
+  medium_tech: https://medium.com/tech-potpourri
+  medium_di: https://medium.com/diversity-with-a-d
+  email: mailto:geetika.tripathi@sap.com
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+
+plugins:
+  - jekyll-seo-tag
